@@ -7,9 +7,7 @@ import me.wcy.music.databinding.ItemCurrentPlaylistBinding
 import me.wcy.music.service.PlayerController
 import me.wcy.radapter3.RItemBinder
 
-/**
- * Created by wangchenyan.top on 2023/9/4.
- */
+
 class CurrentPlaylistItemBinder(
     private val playerController: PlayerController,
     private val listener: OnItemClickListener2<MediaItem>

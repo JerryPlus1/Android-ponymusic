@@ -10,9 +10,7 @@ import me.wcy.music.utils.MusicUtils.asLargeCover
 import me.wcy.music.utils.MusicUtils.asSmallCover
 import top.wangchenyan.common.CommonApp
 
-/**
- * Created by wangchenyan.top on 2023/9/18.
- */
+
 
 const val SCHEME_NETEASE = "netease"
 const val PARAM_ID = "id"

@@ -20,10 +20,7 @@ import top.wangchenyan.common.CommonApp
 import top.wangchenyan.common.ext.findActivity
 import javax.inject.Inject
 
-/**
- * 自定义Application
- * Created by wcy on 2015/11/27.
- */
+
 @HiltAndroidApp
 class MusicApplication : Application() {
     @Inject

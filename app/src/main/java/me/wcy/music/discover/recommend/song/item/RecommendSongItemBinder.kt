@@ -9,9 +9,7 @@ import me.wcy.music.utils.ImageUtils.loadCover
 import me.wcy.music.utils.getSimpleArtist
 import me.wcy.radapter3.RItemBinder
 
-/**
- * Created by wangchenyan.top on 2023/9/15.
- */
+
 class RecommendSongItemBinder(private val listener: OnItemClickListener2<SongData>) :
     RItemBinder<ItemRecommendSongBinding, SongData>() {
 

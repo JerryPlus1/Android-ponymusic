@@ -2,9 +2,7 @@ package me.wcy.music.account.bean
 
 import com.google.gson.annotations.SerializedName
 
-/**
- * Created by wangchenyan.top on 2023/8/28.
- */
+
 data class ProfileData(
     @SerializedName("userId")
     val userId: Long = 0,

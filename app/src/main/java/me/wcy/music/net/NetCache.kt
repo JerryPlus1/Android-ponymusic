@@ -5,9 +5,7 @@ import com.blankj.utilcode.util.GsonUtils
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 
-/**
- * Created by wangchenyan.top on 2024/1/4.
- */
+
 class NetCache(name: String) {
     private val cache by lazy {
         CacheDiskUtils.getInstance(name)

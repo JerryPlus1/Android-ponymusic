@@ -16,9 +16,7 @@ import me.wcy.music.discover.playlist.square.item.PlaylistItemBinder
 import me.wcy.radapter3.RAdapter
 import me.wcy.router.CRouter
 
-/**
- * Created by wangchenyan.top on 2023/9/26.
- */
+
 @AndroidEntryPoint
 class PlaylistTabFragment : SimpleMusicRefreshFragment<PlaylistData>() {
     private val cat by lazy {

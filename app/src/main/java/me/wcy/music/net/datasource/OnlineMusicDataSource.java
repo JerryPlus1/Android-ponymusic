@@ -1,18 +1,4 @@
-/*
- * Copyright (C) 2016 The Android Open Source Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+
 package me.wcy.music.net.datasource;
 
 import static androidx.media3.common.util.Util.castNonNull;
@@ -63,16 +49,7 @@ import okhttp3.RequestBody;
 import okhttp3.Response;
 import okhttp3.ResponseBody;
 
-/**
- * <p>
- * A copy of {@link OkHttpDataSource} which support get real url when play.
- * </p>
- * An {@link HttpDataSource} that delegates to Square's {@link Call.Factory}.
- *
- * <p>Note: HTTP request headers will be set using all parameters passed via (in order of decreasing
- * priority) the {@code dataSpec}, {@link #setRequestProperty} and the default parameters used to
- * construct the instance.
- */
+
 @UnstableApi
 public class OnlineMusicDataSource extends BaseDataSource implements HttpDataSource {
 
@@ -80,9 +57,7 @@ public class OnlineMusicDataSource extends BaseDataSource implements HttpDataSou
         MediaLibraryInfo.registerModule("media3.datasource.okhttp");
     }
 
-    /**
-     * {@link DataSource.Factory} for {@link OnlineMusicDataSource} instances.
-     */
+    
     public static final class Factory implements HttpDataSource.Factory {
 
         private final RequestProperties defaultRequestProperties;
@@ -97,12 +72,7 @@ public class OnlineMusicDataSource extends BaseDataSource implements HttpDataSou
         @Nullable
         private Predicate<String> contentTypePredicate;
 
-        /**
-         * Creates an instance.
-         *
-         * @param callFactory A {@link Call.Factory} (typically an {@link OkHttpClient}) for use by the
-         *                    sources created by the factory.
-         */
+        
         public Factory(Call.Factory callFactory) {
             this.callFactory = callFactory;
             defaultRequestProperties = new RequestProperties();
@@ -116,16 +86,7 @@ public class OnlineMusicDataSource extends BaseDataSource implements HttpDataSou
             return this;
         }
 
-        /**
-         * Sets the user agent that will be used.
-         *
-         * <p>The default is {@code null}, which causes the default user agent of the underlying {@link
-         * OkHttpClient} to be used.
-         *
-         * @param userAgent The user agent that will be used, or {@code null} to use the default user
-         *                  agent of the underlying {@link OkHttpClient}.
-         * @return This factory.
-         */
+        
         @CanIgnoreReturnValue
         @UnstableApi
         public Factory setUserAgent(@Nullable String userAgent) {
@@ -133,14 +94,7 @@ public class OnlineMusicDataSource extends BaseDataSource implements HttpDataSou
             return this;
         }
 
-        /**
-         * Sets the {@link CacheControl} that will be used.
-         *
-         * <p>The default is {@code null}.
-         *
-         * @param cacheControl The cache control that will be used.
-         * @return This factory.
-         */
+        
         @CanIgnoreReturnValue
         @UnstableApi
         public Factory setCacheControl(@Nullable CacheControl cacheControl) {
@@ -148,17 +102,7 @@ public class OnlineMusicDataSource extends BaseDataSource implements HttpDataSou
             return this;
         }
 
-        /**
-         * Sets a content type {@link Predicate}. If a content type is rejected by the predicate then a
-         * {@link InvalidContentTypeException} is thrown from {@link
-         * OnlineMusicDataSource#open(DataSpec)}.
-         *
-         * <p>The default is {@code null}.
-         *
-         * @param contentTypePredicate The content type {@link Predicate}, or {@code null} to clear a
-         *                             predicate that was previously set.
-         * @return This factory.
-         */
+        
         @CanIgnoreReturnValue
         @UnstableApi
         public Factory setContentTypePredicate(@Nullable Predicate<String> contentTypePredicate) {
@@ -166,16 +110,7 @@ public class OnlineMusicDataSource extends BaseDataSource implements HttpDataSou
             return this;
         }
 
-        /**
-         * Sets the {@link TransferListener} that will be used.
-         *
-         * <p>The default is {@code null}.
-         *
-         * <p>See {@link DataSource#addTransferListener(TransferListener)}.
-         *
-         * @param transferListener The listener that will be used.
-         * @return This factory.
-         */
+        
         @CanIgnoreReturnValue
         @UnstableApi
         public Factory setTransferListener(@Nullable TransferListener transferListener) {
@@ -218,29 +153,23 @@ public class OnlineMusicDataSource extends BaseDataSource implements HttpDataSou
     private long bytesToRead;
     private long bytesRead;
 
-    /**
-     * @deprecated Use {@link OnlineMusicDataSource.Factory} instead.
-     */
+    
     @SuppressWarnings("deprecation")
     @UnstableApi
     @Deprecated
     public OnlineMusicDataSource(Call.Factory callFactory) {
-        this(callFactory, /* userAgent= */ null);
+        this(callFactory,  null);
     }
 
-    /**
-     * @deprecated Use {@link OnlineMusicDataSource.Factory} instead.
-     */
+    
     @SuppressWarnings("deprecation")
     @UnstableApi
     @Deprecated
     public OnlineMusicDataSource(Call.Factory callFactory, @Nullable String userAgent) {
-        this(callFactory, userAgent, /* cacheControl= */ null, /* defaultRequestProperties= */ null);
+        this(callFactory, userAgent,  null,  null);
     }
 
-    /**
-     * @deprecated Use {@link OnlineMusicDataSource.Factory} instead.
-     */
+    
     @UnstableApi
     @Deprecated
     public OnlineMusicDataSource(
@@ -253,7 +182,7 @@ public class OnlineMusicDataSource extends BaseDataSource implements HttpDataSou
                 userAgent,
                 cacheControl,
                 defaultRequestProperties,
-                /* contentTypePredicate= */ null);
+                 null);
     }
 
     private OnlineMusicDataSource(
@@ -262,7 +191,7 @@ public class OnlineMusicDataSource extends BaseDataSource implements HttpDataSou
             @Nullable CacheControl cacheControl,
             @Nullable RequestProperties defaultRequestProperties,
             @Nullable Predicate<String> contentTypePredicate) {
-        super(/* isNetwork= */ true);
+        super( true);
         this.callFactory = Assertions.checkNotNull(callFactory);
         this.userAgent = userAgent;
         this.cacheControl = cacheControl;
@@ -271,9 +200,7 @@ public class OnlineMusicDataSource extends BaseDataSource implements HttpDataSou
         this.requestProperties = new RequestProperties();
     }
 
-    /**
-     * @deprecated Use {@link OnlineMusicDataSource.Factory#setContentTypePredicate(Predicate)} instead.
-     */
+    
     @UnstableApi
     @Deprecated
     public void setContentTypePredicate(@Nullable Predicate<String> contentTypePredicate) {
@@ -428,9 +355,7 @@ public class OnlineMusicDataSource extends BaseDataSource implements HttpDataSou
         }
     }
 
-    /**
-     * Establishes a connection.
-     */
+    
     private Request makeRequest(DataSpec dataSpec) throws HttpDataSourceException {
         String playUrl = OnlineMusicUriFetcher.INSTANCE.fetchPlayUrl(dataSpec.uri);
         if (TextUtils.isEmpty(playUrl)) {
@@ -493,10 +418,7 @@ public class OnlineMusicDataSource extends BaseDataSource implements HttpDataSou
         return builder.build();
     }
 
-    /**
-     * This method is an interrupt safe replacement of OkHttp Call.execute() which can get in bad
-     * states if interrupted while writing to the shared connection socket.
-     */
+    
     private Response executeCall(Call call) throws IOException {
         SettableFuture<Response> future = SettableFuture.create();
         call.enqueue(
@@ -522,15 +444,7 @@ public class OnlineMusicDataSource extends BaseDataSource implements HttpDataSou
         }
     }
 
-    /**
-     * Attempts to skip the specified number of bytes in full.
-     *
-     * @param bytesToSkip The number of bytes to skip.
-     * @param dataSpec    The {@link DataSpec}.
-     * @throws HttpDataSourceException If the thread is interrupted during the operation, or an error
-     *                                 occurs while reading from the source, or if the data ended before skipping the specified
-     *                                 number of bytes.
-     */
+    
     private void skipFully(long bytesToSkip, DataSpec dataSpec) throws HttpDataSourceException {
         if (bytesToSkip == 0) {
             return;
@@ -565,20 +479,7 @@ public class OnlineMusicDataSource extends BaseDataSource implements HttpDataSou
         }
     }
 
-    /**
-     * Reads up to {@code length} bytes of data and stores them into {@code buffer}, starting at index
-     * {@code offset}.
-     *
-     * <p>This method blocks until at least one byte of data can be read, the end of the opened range
-     * is detected, or an exception is thrown.
-     *
-     * @param buffer     The buffer into which the read data should be stored.
-     * @param offset     The start offset into {@code buffer} at which data should be written.
-     * @param readLength The maximum number of bytes to read.
-     * @return The number of bytes read, or {@link C#RESULT_END_OF_INPUT} if the end of the opened
-     * range is reached.
-     * @throws IOException If an error occurs reading from the source.
-     */
+    
     private int readInternal(byte[] buffer, int offset, int readLength) throws IOException {
         if (readLength == 0) {
             return 0;
@@ -601,9 +502,7 @@ public class OnlineMusicDataSource extends BaseDataSource implements HttpDataSou
         return read;
     }
 
-    /**
-     * Closes the current connection quietly, if there is one.
-     */
+    
     private void closeConnectionQuietly() {
         if (response != null) {
             Assertions.checkNotNull(response.body()).close();

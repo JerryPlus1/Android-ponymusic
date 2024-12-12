@@ -18,9 +18,7 @@ import me.wcy.music.storage.preference.ConfigPreferences
 import top.wangchenyan.common.ext.toUnMutable
 import javax.inject.Inject
 
-/**
- * Created by wangchenyan.top on 2023/9/25.
- */
+
 @HiltViewModel
 class DiscoverViewModel @Inject constructor(
     private val userService: UserService

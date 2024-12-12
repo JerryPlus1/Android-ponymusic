@@ -1,8 +1,6 @@
 package me.wcy.music.service
 
-/**
- * Created by wangchenyan.top on 2023/9/18.
- */
+
 sealed class PlayState {
     object Idle : PlayState()
     object Preparing : PlayState()

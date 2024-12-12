@@ -10,10 +10,7 @@ import top.wangchenyan.common.ext.getColorEx
 import top.wangchenyan.common.widget.CustomSpan.appendStyle
 import me.wcy.music.R
 
-/**
- * 歌曲工具类
- * Created by wcy on 2015/11/27.
- */
+
 object MusicUtils {
 
     fun isAudioControlPanelAvailable(context: Context): Boolean {

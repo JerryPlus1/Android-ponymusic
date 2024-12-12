@@ -30,9 +30,7 @@ import top.wangchenyan.common.ext.getColor
 import top.wangchenyan.common.ext.loadAvatar
 import top.wangchenyan.common.widget.CustomSpan.appendStyle
 
-/**
- * Created by wangchenyan.top on 2023/9/4.
- */
+
 class PlayBar @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null
 ) : FrameLayout(context, attrs) {

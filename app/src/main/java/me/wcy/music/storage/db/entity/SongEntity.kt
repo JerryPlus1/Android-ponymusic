@@ -10,9 +10,7 @@ import me.wcy.music.utils.MusicUtils.asLargeCover
 import me.wcy.music.utils.MusicUtils.asSmallCover
 import me.wcy.music.utils.generateUniqueId
 
-/**
- * Created by wangchenyan.top on 2023/8/29.
- */
+
 @Parcelize
 @Entity("play_list", indices = [Index("title"), Index("artist"), Index("album")])
 data class SongEntity(

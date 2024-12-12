@@ -16,9 +16,7 @@ import retrofit2.http.GET
 import retrofit2.http.POST
 import retrofit2.http.Query
 
-/**
- * Created by wangchenyan.top on 2023/8/25.
- */
+
 interface AccountApi {
 
     @GET("captcha/sent")

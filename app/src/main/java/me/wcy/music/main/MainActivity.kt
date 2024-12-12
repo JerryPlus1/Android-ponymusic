@@ -34,9 +34,7 @@ import top.wangchenyan.common.ext.viewBindings
 import top.wangchenyan.common.widget.pager.CustomTabPager
 import javax.inject.Inject
 
-/**
- * Created by wangchenyan.top on 2023/8/21.
- */
+
 @AndroidEntryPoint
 class MainActivity : BaseMusicActivity() {
     private val viewBinding by viewBindings<ActivityMainBinding>()

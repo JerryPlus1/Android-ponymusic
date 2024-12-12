@@ -4,9 +4,7 @@ import com.google.gson.annotations.SerializedName
 import me.wcy.music.utils.MusicUtils.asLargeCover
 import me.wcy.music.utils.MusicUtils.asSmallCover
 
-/**
- * Created by wangchenyan.top on 2023/9/6.
- */
+
 data class AlbumData(
     @SerializedName("id")
     val id: Long = 0,

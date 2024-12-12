@@ -18,10 +18,7 @@ import me.wcy.music.R
 import me.wcy.music.utils.ImageUtils
 import top.wangchenyan.common.ext.startOrResume
 
-/**
- * 专辑封面
- * Created by wcy on 2015/11/30.
- */
+
 class AlbumCoverView @JvmOverloads constructor(
     context: Context?,
     attrs: AttributeSet? = null,

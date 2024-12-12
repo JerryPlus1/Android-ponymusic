@@ -8,10 +8,7 @@ import top.wangchenyan.common.CommonApp
 import top.wangchenyan.common.storage.IPreferencesFile
 import top.wangchenyan.common.storage.PreferencesFile
 
-/**
- * SharedPreferences工具类
- * Created by wcy on 2015/11/28.
- */
+
 object ConfigPreferences :
     IPreferencesFile by PreferencesFile(CommonApp.app, PreferenceName.CONFIG, false) {
 

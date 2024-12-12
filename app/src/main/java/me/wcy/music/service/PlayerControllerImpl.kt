@@ -22,9 +22,7 @@ import me.wcy.music.utils.toSongEntity
 import top.wangchenyan.common.ext.toUnMutable
 import top.wangchenyan.common.ext.toast
 
-/**
- * Created by wangchenyan.top on 2024/3/27.
- */
+
 class PlayerControllerImpl(
     private val player: Player,
     private val db: MusicDatabase,

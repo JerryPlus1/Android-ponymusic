@@ -12,9 +12,7 @@ import me.wcy.music.ext.accessEntryPoint
 import me.wcy.music.storage.db.MusicDatabase
 import top.wangchenyan.common.ext.toUnMutable
 
-/**
- * Created by wangchenyan.top on 2024/3/26.
- */
+
 @Module
 @InstallIn(SingletonComponent::class)
 object PlayServiceModule {

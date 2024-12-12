@@ -7,9 +7,7 @@ import android.content.IntentFilter
 import android.os.Build
 import dagger.hilt.android.EntryPointAccessors
 
-/**
- * Created by wangchenyan.top on 2023/7/12.
- */
+
 
 inline fun <reified T : Any> Application.accessEntryPoint(): T {
     return EntryPointAccessors.fromApplication(this, T::class.java)

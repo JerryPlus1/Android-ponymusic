@@ -9,9 +9,7 @@ import me.wcy.music.mine.MineApi
 import top.wangchenyan.common.model.CommonResult
 import javax.inject.Inject
 
-/**
- * Created by wangchenyan.top on 2024/3/20.
- */
+
 @HiltViewModel
 class CollectSongViewModel @Inject constructor() : ViewModel() {
     private val _myPlaylists = MutableStateFlow<List<PlaylistData>>(emptyList())

@@ -17,9 +17,7 @@ import me.wcy.music.databinding.FragmentPhoneLoginBinding
 import me.wcy.router.annotation.Route
 import javax.inject.Inject
 
-/**
- * Created by wangchenyan.top on 2024/1/3.
- */
+
 @Route(RoutePath.PHONE_LOGIN)
 @AndroidEntryPoint
 class PhoneLoginFragment : BaseMusicFragment() {

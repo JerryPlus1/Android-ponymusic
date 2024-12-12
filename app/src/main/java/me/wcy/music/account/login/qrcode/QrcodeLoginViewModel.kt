@@ -17,9 +17,7 @@ import me.wcy.music.account.bean.LoginResultData
 import me.wcy.music.account.service.UserService
 import javax.inject.Inject
 
-/**
- * Created by wangchenyan.top on 2023/8/28.
- */
+
 @HiltViewModel
 class QrcodeLoginViewModel @Inject constructor(
     private val userService: UserService

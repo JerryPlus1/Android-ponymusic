@@ -13,9 +13,7 @@ import me.wcy.music.account.service.UserService
 import me.wcy.music.net.NetUtils
 import javax.inject.Inject
 
-/**
- * Created by wangchenyan.top on 2024/1/3.
- */
+
 @HiltViewModel
 class PhoneLoginViewModel @Inject constructor(
     private val userService: UserService

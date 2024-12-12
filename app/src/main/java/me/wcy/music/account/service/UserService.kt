@@ -5,9 +5,7 @@ import kotlinx.coroutines.flow.StateFlow
 import top.wangchenyan.common.model.CommonResult
 import me.wcy.music.account.bean.ProfileData
 
-/**
- * Created by wangchenyan.top on 2023/9/18.
- */
+
 interface UserService {
     val profile: StateFlow<ProfileData?>
 

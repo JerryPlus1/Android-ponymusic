@@ -6,9 +6,7 @@ import me.wcy.music.discover.DiscoverApi
 import me.wcy.music.storage.preference.ConfigPreferences
 import top.wangchenyan.common.net.apiCall
 
-/**
- * Created by wangchenyan.top on 2024/3/26.
- */
+
 object OnlineMusicUriFetcher {
 
     fun fetchPlayUrl(uri: Uri): String {

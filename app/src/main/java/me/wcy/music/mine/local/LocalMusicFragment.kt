@@ -25,9 +25,7 @@ import top.wangchenyan.common.ext.viewBindings
 import top.wangchenyan.common.permission.Permissioner
 import javax.inject.Inject
 
-/**
- * Created by wangchenyan.top on 2023/8/30.
- */
+
 @Route(RoutePath.LOCAL_SONG)
 @AndroidEntryPoint
 class LocalMusicFragment : BaseMusicFragment() {

@@ -13,9 +13,7 @@ import top.wangchenyan.common.ext.showConfirmDialog
 import top.wangchenyan.common.ext.toast
 import top.wangchenyan.common.ui.activity.BaseActivity
 
-/**
- * Created by wangchenyan.top on 2023/10/11.
- */
+
 class DeletePlaylistSongMenuItem(
     private val playlistData: PlaylistData,
     private val songData: SongData,

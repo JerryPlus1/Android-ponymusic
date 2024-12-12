@@ -1,8 +1,6 @@
 package me.wcy.music.consts
 
-/**
- * Created by wangchenyan.top on 2023/9/18.
- */
+
 object RoutePath {
     const val LOGIN = "/login"
     const val PHONE_LOGIN = "/login/phone"

@@ -26,9 +26,7 @@ import top.wangchenyan.common.ext.viewBindings
 import top.wangchenyan.common.widget.CustomSpan.appendStyle
 import javax.inject.Inject
 
-/**
- * Created by wangchenyan.top on 2023/10/13.
- */
+
 @AndroidEntryPoint
 class CurrentPlaylistFragment : BottomSheetDialogFragment() {
     private val viewBinding by viewBindings<FragmentCurrentPlaylistBinding>()

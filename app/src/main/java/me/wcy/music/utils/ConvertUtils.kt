@@ -4,9 +4,7 @@ import top.wangchenyan.common.ext.divide
 import top.wangchenyan.common.ext.format
 import java.math.RoundingMode
 
-/**
- * Created by wangchenyan.top on 2023/9/21.
- */
+
 object ConvertUtils {
 
     fun formatPlayCount(num: Long, dot: Int = 0): String {

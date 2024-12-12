@@ -5,9 +5,7 @@ import androidx.lifecycle.LiveData
 import androidx.media3.common.MediaItem
 import kotlinx.coroutines.flow.StateFlow
 
-/**
- * Created by wangchenyan.top on 2024/3/26.
- */
+
 interface PlayerController {
     val playlist: LiveData<List<MediaItem>>
     val currentSong: LiveData<MediaItem?>

@@ -5,9 +5,7 @@ import android.util.AttributeSet
 import android.widget.LinearLayout
 import me.wcy.music.R
 
-/**
- * Created by wangchenyan.top on 2023/4/18.
- */
+
 class MaxHeightLinearLayout @JvmOverloads constructor(
     context: Context,
     attrs: AttributeSet? = null,
@@ -29,9 +27,7 @@ class MaxHeightLinearLayout @JvmOverloads constructor(
         super.onMeasure(widthMeasureSpec, maxHeightMeasureSpec)
     }
 
-    /**
-     * 设置最大高度，单位为px
-     */
+    
     fun setMaxHeight(maxHeight: Int) {
         this.maxHeight = maxHeight
         requestLayout()

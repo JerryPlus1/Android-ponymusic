@@ -7,9 +7,7 @@ import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import top.wangchenyan.common.CommonApp
 
-/**
- * Created by wangchenyan.top on 2023/7/20.
- */
+
 @Module
 @InstallIn(SingletonComponent::class)
 object DatabaseModule {

@@ -9,9 +9,7 @@ import me.wcy.music.discover.DiscoverApi
 import top.wangchenyan.common.ext.toUnMutable
 import top.wangchenyan.common.model.CommonResult
 
-/**
- * Created by wangchenyan.top on 2023/10/25.
- */
+
 class RankingViewModel : ViewModel() {
     private val _rankingList = MutableLiveData<List<Any>>()
     val rankingList = _rankingList.toUnMutable()

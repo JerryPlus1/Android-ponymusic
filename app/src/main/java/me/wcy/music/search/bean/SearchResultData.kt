@@ -4,9 +4,7 @@ import com.google.gson.annotations.SerializedName
 import me.wcy.music.common.bean.PlaylistData
 import me.wcy.music.common.bean.SongData
 
-/**
- * Created by wangchenyan.top on 2023/9/20.
- */
+
 data class SearchResultData(
     @SerializedName("songs")
     val songs: List<SongData> = emptyList(),

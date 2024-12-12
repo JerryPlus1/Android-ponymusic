@@ -7,9 +7,7 @@ import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import me.wcy.music.storage.db.entity.SongEntity
 
-/**
- * Created by wangchenyan.top on 2023/8/29.
- */
+
 @Dao
 interface PlaylistDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)

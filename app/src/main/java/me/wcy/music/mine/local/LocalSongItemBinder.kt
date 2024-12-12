@@ -6,9 +6,7 @@ import me.wcy.music.storage.db.entity.SongEntity
 import me.wcy.music.utils.MusicUtils
 import me.wcy.radapter3.RItemBinder
 
-/**
- * Created by wangchenyan.top on 2023/8/30.
- */
+
 class LocalSongItemBinder(
     private val listener: OnItemClickListener2<SongEntity>
 ) : RItemBinder<ItemLocalSongBinding, SongEntity>() {

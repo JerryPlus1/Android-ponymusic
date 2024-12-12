@@ -8,9 +8,7 @@ import me.wcy.music.common.dialog.songmenu.MenuItem
 import me.wcy.music.mine.collect.song.CollectSongFragment
 import top.wangchenyan.common.ext.findActivity
 
-/**
- * Created by wangchenyan.top on 2023/10/11.
- */
+
 class CollectMenuItem(
     private val scope: CoroutineScope,
     private val songData: SongData

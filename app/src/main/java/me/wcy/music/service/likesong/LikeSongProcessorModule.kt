@@ -8,9 +8,7 @@ import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import me.wcy.music.ext.accessEntryPoint
 
-/**
- * Created by wangchenyan.top on 2024/3/21.
- */
+
 @Module
 @InstallIn(SingletonComponent::class)
 abstract class LikeSongProcessorModule {

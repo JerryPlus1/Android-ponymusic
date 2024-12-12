@@ -16,9 +16,7 @@ import top.wangchenyan.common.model.CommonResult
 import javax.inject.Inject
 import javax.inject.Singleton
 
-/**
- * Created by wangchenyan.top on 2023/8/25.
- */
+
 @Singleton
 class UserServiceImpl @Inject constructor() : UserService {
     private val _profile = MutableStateFlow(AccountPreference.profile)

@@ -8,9 +8,7 @@ import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import me.wcy.music.ext.accessEntryPoint
 
-/**
- * Created by wangchenyan.top on 2023/9/18.
- */
+
 @Module
 @InstallIn(SingletonComponent::class)
 abstract class UserServiceModule {

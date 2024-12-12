@@ -16,9 +16,7 @@ import me.wcy.music.search.SearchViewModel
 import me.wcy.radapter3.RAdapter
 import me.wcy.router.CRouter
 
-/**
- * Created by wangchenyan.top on 2023/9/20.
- */
+
 @AndroidEntryPoint
 class SearchPlaylistFragment : SimpleMusicRefreshFragment<PlaylistData>() {
     private val viewModel by activityViewModels<SearchViewModel>()

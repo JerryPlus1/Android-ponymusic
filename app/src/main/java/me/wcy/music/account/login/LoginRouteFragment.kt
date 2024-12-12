@@ -9,9 +9,7 @@ import me.wcy.router.CRouter
 import me.wcy.router.RouteResultListener
 import me.wcy.router.annotation.Route
 
-/**
- * Created by wangchenyan.top on 2024/1/3.
- */
+
 @Route(RoutePath.LOGIN)
 class LoginRouteFragment : BaseMusicFragment() {
     private val viewBinding by viewBindings<FragmentLoginRouteBinding>()

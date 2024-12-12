@@ -8,9 +8,7 @@ import kotlinx.coroutines.launch
 import top.wangchenyan.common.ext.toUnMutable
 import me.wcy.music.consts.Consts
 
-/**
- * Created by wangchenyan.top on 2023/9/20.
- */
+
 class SearchViewModel : ViewModel() {
     private val _keywords = MutableStateFlow("")
     val keywords = _keywords.toUnMutable()

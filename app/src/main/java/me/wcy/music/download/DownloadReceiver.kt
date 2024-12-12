@@ -8,10 +8,7 @@ import android.util.LongSparseArray
 import top.wangchenyan.common.ext.toast
 import me.wcy.music.R
 
-/**
- * 下载完成广播接收器
- * Created by hzwangchenyan on 2015/12/30.
- */
+
 class DownloadReceiver : BroadcastReceiver() {
     private val mDownloadList = LongSparseArray<DownloadMusicInfo>()
 

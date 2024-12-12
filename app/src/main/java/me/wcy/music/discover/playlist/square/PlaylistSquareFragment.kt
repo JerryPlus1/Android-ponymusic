@@ -16,9 +16,7 @@ import me.wcy.music.databinding.FragmentPlaylistSpuareBinding
 import me.wcy.music.discover.playlist.square.viewmodel.PlaylistSquareViewModel
 import me.wcy.router.annotation.Route
 
-/**
- * Created by wangchenyan.top on 2023/9/26.
- */
+
 @Route(RoutePath.PLAYLIST_SQUARE)
 @AndroidEntryPoint
 class PlaylistSquareFragment : BaseMusicFragment() {

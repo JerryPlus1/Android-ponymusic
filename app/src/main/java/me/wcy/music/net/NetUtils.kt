@@ -8,9 +8,7 @@ import okhttp3.RequestBody
 import okhttp3.RequestBody.Companion.toRequestBody
 import retrofit2.HttpException
 
-/**
- * Created by wangchenyan.top on 2023/8/28.
- */
+
 object NetUtils {
     val CONTENT_TYPE_JSON = "application/json".toMediaType()
 

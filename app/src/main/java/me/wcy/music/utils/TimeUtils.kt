@@ -3,9 +3,7 @@ package me.wcy.music.utils
 import android.text.format.DateUtils
 import java.util.Locale
 
-/**
- * Created by hzwangchenyan on 2016/3/22.
- */
+
 object TimeUtils {
     fun formatMs(milli: Long): String {
         return formatTime("mm:ss", milli)

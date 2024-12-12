@@ -13,9 +13,7 @@ import okhttp3.Response
 import okio.Buffer
 import okio.IOException
 
-/**
- * Created by wcy on 2018/7/15.
- */
+
 class HeaderInterceptor : Interceptor {
     override fun intercept(chain: Interceptor.Chain): Response {
         val request = chain.request()

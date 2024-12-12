@@ -4,9 +4,7 @@ import android.os.Handler
 import android.os.Looper
 import android.text.format.DateUtils
 
-/**
- * Created by hzwangchenyan on 2017/8/8.
- */
+
 class QuitTimer(private val listener: OnTimerListener) {
     private val handler: Handler by lazy {
         Handler(Looper.getMainLooper())
@@ -41,9 +39,7 @@ class QuitTimer(private val listener: OnTimerListener) {
     }
 
     interface OnTimerListener {
-        /**
-         * 更新定时停止播放时间
-         */
+        
         fun onTick(remain: Long)
 
         fun onTimeEnd()

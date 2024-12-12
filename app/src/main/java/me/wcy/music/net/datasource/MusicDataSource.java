@@ -1,18 +1,4 @@
-/*
- * Copyright (C) 2016 The Android Open Source Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+
 package me.wcy.music.net.datasource;
 
 import static me.wcy.music.utils.ModelExKt.SCHEME_NETEASE;
@@ -50,43 +36,11 @@ import java.util.Map;
 import me.wcy.music.net.HttpClient;
 import okhttp3.Call;
 
-/**
- * <p>
- * A copy of {@link DefaultDataSource} which support get real url when play.
- * </p>
- * <p>
- * A {@link DataSource} that supports multiple URI schemes. The supported schemes are:
- *
- * <ul>
- *   <li><b>{@code file}</b>: For fetching data from a local file (e.g. {@code
- *       file:///path/to/media/media.mp4}, or just {@code /path/to/media/media.mp4} because the
- *       implementation assumes that a URI without a scheme is a local file URI).
- *   <li><b>{@code asset}</b>: For fetching data from an asset in the application's APK (e.g. {@code
- *       asset:///media.mp4}).
- *   <li><b>{@code rawresource}</b>: For fetching data from a raw resource in the application's APK
- *       (e.g. {@code rawresource:///resourceId}, where {@code rawResourceId} is the integer
- *       identifier of the raw resource).
- *   <li><b>{@code android.resource}</b>: For fetching data in the application's APK (e.g. {@code
- *       android.resource:///resourceId} or {@code android.resource://resourceType/resourceName}).
- *       See {@link RawResourceDataSource} for more information about the URI form.
- *   <li><b>{@code content}</b>: For fetching data from a content URI (e.g. {@code
- *       content://authority/path/123}).
- *   <li><b>{@code rtmp}</b>: For fetching data over RTMP. Only supported if the project using
- *       ExoPlayer has an explicit dependency on ExoPlayer's RTMP extension.
- *   <li><b>{@code data}</b>: For parsing data inlined in the URI as defined in RFC 2397.
- *   <li><b>{@code udp}</b>: For fetching data over UDP (e.g. {@code udp://something.com/media}).
- *   <li><b>{@code http(s)}</b>: For fetching data over HTTP and HTTPS (e.g. {@code
- *       https://www.something.com/media.mp4}), if constructed using {@link
- *       #MusicDataSource(Context, String, boolean)}, or any other schemes supported by a base
- *       data source if constructed using {@link #MusicDataSource(Context, DataSource)}.
- * </ul>
- */
+
 @UnstableApi
 public final class MusicDataSource implements DataSource {
 
-    /**
-     * {@link DataSource.Factory} for {@link MusicDataSource} instances.
-     */
+    
     public static final class Factory implements DataSource.Factory {
 
         private final Context context;
@@ -94,40 +48,18 @@ public final class MusicDataSource implements DataSource {
         @Nullable
         private TransferListener transferListener;
 
-        /**
-         * Creates an instance.
-         *
-         * @param context A context.
-         */
+        
         public Factory(Context context) {
             this(context, new DefaultHttpDataSource.Factory());
         }
 
-        /**
-         * Creates an instance.
-         *
-         * @param context               A context.
-         * @param baseDataSourceFactory The {@link DataSource.Factory} to be used to create base {@link
-         *                              DataSource DataSources} for {@link MusicDataSource} instances. The base {@link
-         *                              DataSource} is normally an {@link HttpDataSource}, and is responsible for fetching data
-         *                              over HTTP and HTTPS, as well as any other URI schemes not otherwise supported by {@link
-         *                              MusicDataSource}.
-         */
+        
         public Factory(Context context, DataSource.Factory baseDataSourceFactory) {
             this.context = context.getApplicationContext();
             this.baseDataSourceFactory = baseDataSourceFactory;
         }
 
-        /**
-         * Sets the {@link TransferListener} that will be used.
-         *
-         * <p>The default is {@code null}.
-         *
-         * <p>See {@link DataSource#addTransferListener(TransferListener)}.
-         *
-         * @param transferListener The listener that will be used.
-         * @return This factory.
-         */
+        
         @CanIgnoreReturnValue
         @UnstableApi
         public Factory setTransferListener(@Nullable TransferListener transferListener) {
@@ -185,31 +117,18 @@ public final class MusicDataSource implements DataSource {
     @Nullable
     private DataSource dataSource;
 
-    /**
-     * Constructs a new instance, optionally configured to follow cross-protocol redirects.
-     *
-     * @param context                     A context.
-     * @param allowCrossProtocolRedirects Whether to allow cross-protocol redirects.
-     */
+    
     @UnstableApi
     public MusicDataSource(Context context, boolean allowCrossProtocolRedirects) {
         this(
                 context,
-                /* userAgent= */ null,
+                 null,
                 DefaultHttpDataSource.DEFAULT_CONNECT_TIMEOUT_MILLIS,
                 DefaultHttpDataSource.DEFAULT_READ_TIMEOUT_MILLIS,
                 allowCrossProtocolRedirects);
     }
 
-    /**
-     * Constructs a new instance, optionally configured to follow cross-protocol redirects.
-     *
-     * @param context                     A context.
-     * @param userAgent                   The user agent that will be used when requesting remote data, or {@code null}
-     *                                    to use the default user agent of the underlying platform.
-     * @param allowCrossProtocolRedirects Whether cross-protocol redirects (i.e. redirects from HTTP
-     *                                    to HTTPS and vice versa) are enabled when fetching remote data.
-     */
+    
     @UnstableApi
     public MusicDataSource(
             Context context, @Nullable String userAgent, boolean allowCrossProtocolRedirects) {
@@ -221,19 +140,7 @@ public final class MusicDataSource implements DataSource {
                 allowCrossProtocolRedirects);
     }
 
-    /**
-     * Constructs a new instance, optionally configured to follow cross-protocol redirects.
-     *
-     * @param context                     A context.
-     * @param userAgent                   The user agent that will be used when requesting remote data, or {@code null}
-     *                                    to use the default user agent of the underlying platform.
-     * @param connectTimeoutMillis        The connection timeout that should be used when requesting remote
-     *                                    data, in milliseconds. A timeout of zero is interpreted as an infinite timeout.
-     * @param readTimeoutMillis           The read timeout that should be used when requesting remote data, in
-     *                                    milliseconds. A timeout of zero is interpreted as an infinite timeout.
-     * @param allowCrossProtocolRedirects Whether cross-protocol redirects (i.e. redirects from HTTP
-     *                                    to HTTPS and vice versa) are enabled when fetching remote data.
-     */
+    
     @UnstableApi
     public MusicDataSource(
             Context context,
@@ -251,14 +158,7 @@ public final class MusicDataSource implements DataSource {
                         .createDataSource());
     }
 
-    /**
-     * Constructs a new instance that delegates to a provided {@link DataSource} for URI schemes other
-     * than file, asset and content.
-     *
-     * @param context        A context.
-     * @param baseDataSource A {@link DataSource} to use for URI schemes other than file, asset and
-     *                       content. This {@link DataSource} should normally support at least http(s).
-     */
+    
     @UnstableApi
     public MusicDataSource(Context context, DataSource baseDataSource) {
         this.context = context.getApplicationContext();

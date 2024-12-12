@@ -9,14 +9,10 @@ import me.wcy.music.utils.getSongId
 import me.wcy.music.utils.isLocal
 import java.io.File
 
-/**
- * Created by wangchenyan.top on 2023/9/18.
- */
+
 object LrcCache {
 
-    /**
-     * 获取歌词路径
-     */
+    
     fun getLrcFilePath(music: MediaItem): String? {
         if (music.isLocal()) {
             val audioFile = File(music.mediaMetadata.getFilePath())

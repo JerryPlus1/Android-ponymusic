@@ -21,9 +21,7 @@ import top.wangchenyan.common.widget.CustomSpan.appendStyle
 import top.wangchenyan.common.widget.dialog.CenterDialog
 import top.wangchenyan.common.widget.dialog.CenterDialogBuilder
 
-/**
- * Created by wangchenyan.top on 2023/9/18.
- */
+
 class ApiDomainDialog(private val context: Context) {
 
     fun show() {

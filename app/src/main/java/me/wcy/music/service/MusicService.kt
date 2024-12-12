@@ -16,9 +16,7 @@ import me.wcy.music.R
 import me.wcy.music.net.datasource.MusicDataSource
 import top.wangchenyan.common.CommonApp
 
-/**
- * Created by wangchenyan.top on 2024/3/26.
- */
+
 class MusicService : MediaSessionService() {
     private lateinit var player: Player
     private lateinit var session: MediaSession

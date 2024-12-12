@@ -7,9 +7,7 @@ import me.wcy.music.databinding.ItemUserPlaylistBinding
 import me.wcy.music.utils.ImageUtils.loadCover
 import me.wcy.radapter3.RItemBinder
 
-/**
- * Created by wangchenyan.top on 2023/9/28.
- */
+
 class UserPlaylistItemBinder(
     private val isMine: Boolean,
     private val listener: OnItemClickListener

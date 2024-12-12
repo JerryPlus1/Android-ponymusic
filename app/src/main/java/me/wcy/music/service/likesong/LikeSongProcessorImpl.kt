@@ -12,9 +12,7 @@ import top.wangchenyan.common.net.apiCall
 import javax.inject.Inject
 import javax.inject.Singleton
 
-/**
- * Created by wangchenyan.top on 2024/3/21.
- */
+
 @Singleton
 class LikeSongProcessorImpl @Inject constructor(
     private val userService: UserService

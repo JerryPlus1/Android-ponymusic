@@ -7,9 +7,7 @@ import android.provider.MediaStore
 import me.wcy.music.storage.db.entity.SongEntity
 import me.wcy.music.storage.preference.ConfigPreferences
 
-/**
- * Created by wangchenyan.top on 2023/8/30.
- */
+
 class LocalMusicLoader {
     private val projection = arrayOf(
         MediaStore.Audio.Media._ID,

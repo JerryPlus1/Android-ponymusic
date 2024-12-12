@@ -17,9 +17,7 @@ import me.wcy.music.databinding.FragmentQrcodeLoginBinding
 import me.wcy.router.annotation.Route
 import javax.inject.Inject
 
-/**
- * Created by wangchenyan.top on 2023/8/28.
- */
+
 @Route(RoutePath.QRCODE_LOGIN)
 @AndroidEntryPoint
 class QrcodeLoginFragment : BaseMusicFragment() {

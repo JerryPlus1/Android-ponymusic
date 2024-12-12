@@ -16,9 +16,7 @@ import me.wcy.music.utils.getSimpleArtist
 import me.wcy.radapter3.RItemBinder
 import kotlin.reflect.KClass
 
-/**
- * Created by wangchenyan.top on 2023/10/24.
- */
+
 class OfficialRankingItemBinder(private val listener: OnItemClickListener) :
     RItemBinder<ItemOfficialRankingBinding, PlaylistData>() {
     override fun onBind(

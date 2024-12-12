@@ -3,9 +3,7 @@ package me.wcy.music.consts
 import top.wangchenyan.common.CommonApp
 import java.io.File
 
-/**
- * Created by wangchenyan.top on 2022/9/24.
- */
+
 object FilePath {
     val httpCache: String
         get() = "http".assembleExternalCachePath()

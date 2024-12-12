@@ -1,8 +1,6 @@
 package me.wcy.music.consts
 
-/**
- * Created by wangchenyan.top on 2023/4/19.
- */
+
 object PreferenceName {
     val ACCOUNT = "account".assemble()
     val CONFIG = "config".assemble()

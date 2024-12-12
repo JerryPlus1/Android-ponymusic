@@ -13,9 +13,7 @@ import me.wcy.music.utils.ImageUtils.loadCover
 import me.wcy.music.utils.getSimpleArtist
 import me.wcy.radapter3.RItemBinder
 
-/**
- * Created by wangchenyan.top on 2023/10/19.
- */
+
 class DiscoverRankingItemBinder(private val listener: OnItemClickListener) :
     RItemBinder<ItemDiscoverRankingBinding, PlaylistData>() {
     override fun onBind(

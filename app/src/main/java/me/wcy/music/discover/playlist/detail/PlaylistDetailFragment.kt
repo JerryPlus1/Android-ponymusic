@@ -39,9 +39,7 @@ import top.wangchenyan.common.ext.viewBindings
 import top.wangchenyan.common.utils.StatusBarUtils
 import javax.inject.Inject
 
-/**
- * Created by wangchenyan.top on 2023/9/22.
- */
+
 @Route(RoutePath.PLAYLIST_DETAIL)
 @AndroidEntryPoint
 class PlaylistDetailFragment : BaseMusicFragment() {

@@ -21,9 +21,7 @@ import top.wangchenyan.common.ext.toast
 import top.wangchenyan.common.ext.viewBindings
 import top.wangchenyan.common.widget.decoration.SpacingDecoration
 
-/**
- * Created by wangchenyan.top on 2024/3/20.
- */
+
 @AndroidEntryPoint
 class CollectSongFragment : BottomSheetDialogFragment() {
     private val viewBinding by viewBindings<FragmentCollectSongBinding>()

@@ -23,9 +23,7 @@ import me.wcy.music.search.playlist.SearchPlaylistFragment
 import me.wcy.music.search.song.SearchSongFragment
 import me.wcy.router.annotation.Route
 
-/**
- * Created by wangchenyan.top on 2023/9/20.
- */
+
 @Route(RoutePath.SEARCH)
 @AndroidEntryPoint
 class SearchFragment : BaseMusicFragment() {

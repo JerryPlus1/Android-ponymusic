@@ -9,9 +9,7 @@ import me.wcy.music.utils.ImageUtils.loadCover
 import me.wcy.radapter3.RItemBinder
 import kotlin.reflect.KClass
 
-/**
- * Created by wangchenyan.top on 2023/10/24.
- */
+
 class SelectedRankingItemBinder(
     private val itemWidth: Int,
     private val listener: OnItemClickListener

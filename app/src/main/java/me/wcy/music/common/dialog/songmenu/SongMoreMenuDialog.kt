@@ -13,9 +13,7 @@ import me.wcy.music.storage.db.entity.SongEntity
 import me.wcy.music.utils.ImageUtils.loadCover
 import me.wcy.music.utils.getSimpleArtist
 
-/**
- * Created by wangchenyan.top on 2023/10/11.
- */
+
 class SongMoreMenuDialog {
     private val context: Context
     private var songEntity: SongEntity? = null

@@ -6,9 +6,7 @@ import me.wcy.music.databinding.ItemPlaylistSongBinding
 import me.wcy.music.utils.getSimpleArtist
 import me.wcy.radapter3.RItemBinder
 
-/**
- * Created by wangchenyan.top on 2023/9/22.
- */
+
 class PlaylistSongItemBinder(private val listener: OnItemClickListener2<SongData>) :
     RItemBinder<ItemPlaylistSongBinding, SongData>() {
 

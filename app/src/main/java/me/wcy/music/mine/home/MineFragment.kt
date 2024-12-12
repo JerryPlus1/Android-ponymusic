@@ -28,9 +28,7 @@ import top.wangchenyan.common.widget.decoration.SpacingDecoration
 import top.wangchenyan.common.widget.dialog.BottomItemsDialogBuilder
 import javax.inject.Inject
 
-/**
- * Created by wangchenyan.top on 2023/8/21.
- */
+
 @AndroidEntryPoint
 class MineFragment : BaseMusicFragment() {
     private val viewBinding by viewBindings<FragmentMineBinding>()

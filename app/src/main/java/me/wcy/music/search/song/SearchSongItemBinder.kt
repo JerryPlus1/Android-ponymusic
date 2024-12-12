@@ -9,9 +9,7 @@ import me.wcy.music.utils.MusicUtils
 import me.wcy.music.utils.getSimpleArtist
 import me.wcy.radapter3.RItemBinder
 
-/**
- * Created by wangchenyan.top on 2023/9/20.
- */
+
 class SearchSongItemBinder(private val listener: OnItemClickListener2<SongData>) :
     RItemBinder<ItemSearchSongBinding, SongData>() {
     var keywords = ""

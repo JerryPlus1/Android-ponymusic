@@ -25,9 +25,7 @@ import top.wangchenyan.common.model.CommonResult
 import top.wangchenyan.common.net.apiCall
 import javax.inject.Inject
 
-/**
- * Created by wangchenyan.top on 2023/9/20.
- */
+
 @AndroidEntryPoint
 class SearchSongFragment : SimpleMusicRefreshFragment<SongData>() {
     private val viewModel by activityViewModels<SearchViewModel>()

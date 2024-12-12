@@ -41,9 +41,7 @@ import top.wangchenyan.common.utils.LaunchUtils
 import top.wangchenyan.common.widget.decoration.SpacingDecoration
 import javax.inject.Inject
 
-/**
- * Created by wangchenyan.top on 2023/8/21.
- */
+
 @AndroidEntryPoint
 class DiscoverFragment : BaseMusicFragment() {
     private val viewBinding by viewBindings<FragmentDiscoverBinding>()

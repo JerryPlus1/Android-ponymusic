@@ -11,9 +11,7 @@ import okhttp3.OkHttpClient
 import java.io.File
 import java.util.concurrent.TimeUnit
 
-/**
- * Created by wangchenyan.top on 2022/6/22.
- */
+
 object HttpClient {
 
     val okHttpClient: OkHttpClient by lazy {

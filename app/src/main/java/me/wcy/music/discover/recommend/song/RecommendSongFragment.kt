@@ -26,9 +26,7 @@ import top.wangchenyan.common.ext.viewBindings
 import top.wangchenyan.common.net.apiCall
 import javax.inject.Inject
 
-/**
- * Created by wangchenyan.top on 2023/9/15.
- */
+
 @Route(RoutePath.RECOMMEND_SONG, needLogin = true)
 @AndroidEntryPoint
 class RecommendSongFragment : BaseMusicFragment() {

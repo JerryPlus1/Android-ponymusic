@@ -50,9 +50,7 @@ import java.io.File
 import javax.inject.Inject
 import kotlin.math.abs
 
-/**
- * Created by wangchenyan.top on 2023/9/4.
- */
+
 @Route(RoutePath.PLAYING)
 @AndroidEntryPoint
 class PlayingActivity : BaseMusicActivity() {

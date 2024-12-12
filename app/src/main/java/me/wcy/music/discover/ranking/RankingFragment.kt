@@ -29,9 +29,7 @@ import me.wcy.router.annotation.Route
 import top.wangchenyan.common.ext.viewBindings
 import javax.inject.Inject
 
-/**
- * Created by wangchenyan.top on 2023/10/25.
- */
+
 @Route(RoutePath.RANKING)
 @AndroidEntryPoint
 class RankingFragment : BaseMusicFragment() {

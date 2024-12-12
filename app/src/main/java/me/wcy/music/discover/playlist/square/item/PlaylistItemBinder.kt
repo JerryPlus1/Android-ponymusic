@@ -8,9 +8,7 @@ import me.wcy.music.utils.ConvertUtils
 import me.wcy.music.utils.ImageUtils.loadCover
 import me.wcy.radapter3.RItemBinder
 
-/**
- * Created by wangchenyan.top on 2023/9/25.
- */
+
 class PlaylistItemBinder(
     private val itemWidth: Int,
     private val showPlayButton: Boolean,

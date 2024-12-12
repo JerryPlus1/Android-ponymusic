@@ -21,9 +21,7 @@ import top.wangchenyan.common.net.NetResult
 import top.wangchenyan.common.net.gson.GsonConverterFactory
 import top.wangchenyan.common.utils.GsonUtils
 
-/**
- * Created by wangchenyan.top on 2023/9/6.
- */
+
 interface DiscoverApi {
 
     @POST("recommend/songs")
