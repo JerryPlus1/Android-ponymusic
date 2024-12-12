@@ -13,19 +13,19 @@
             android:summary="前往项目地址给个 Star，鼓励作者"
             android:title="给我点赞" />
     </PreferenceCategory>
-    <PreferenceCategory android:title="关于作者">
+    <PreferenceCategory android:title="大作业小组成员">
         <Preference
             android:key="weibo"
             android:summary="@string/about_weibo"
-            android:title="微博" />
+            android:title="黄嘉逸 20222034033" />
         <Preference
             android:key="blog"
             android:summary="@string/about_blog"
-            android:title="掘金" />
+            android:title="孙铎誉 20222034018" />
         <Preference
             android:key="github"
             android:summary="@string/about_github"
-            android:title="Github" />
+            android:title="梁锦棕 20222034051" />
     </PreferenceCategory>
     <PreferenceCategory android:title="版权">
         <Preference

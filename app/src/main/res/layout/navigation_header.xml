@@ -15,5 +15,5 @@
         android:layout_width="match_parent"
         android:layout_height="176dp"
         android:gravity="center"
-        android:text="广告位招租~" />
+        android:text="安卓大作业" />
 </LinearLayout>

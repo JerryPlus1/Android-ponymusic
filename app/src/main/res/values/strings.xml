@@ -40,10 +40,10 @@
     <string name="timer_set">设置成功，将于%s分钟后关闭</string>
     <string name="timer_cancel">定时停止播放已取消</string>
     <string name="share_app">青春，狂热，放纵，自由，当我们带上耳机以后做回自己，这是音乐的魅力。%1$s：%2$s</string>
-    <string name="about_project_url">https://github.com/wangchenyan/ponymusic</string>
-    <string name="about_weibo">https://weibo.com/wangchenyan1993</string>
-    <string name="about_blog">https://juejin.im/user/2313028193754168</string>
-    <string name="about_github">https://github.com/wangchenyan</string>
+    <string name="about_project_url">https://github.com/JerryPlus1/Android-ponymusic</string>
+    <string name="about_weibo">https://github.com/JerryPlus1</string>
+    <string name="about_blog">https://github.com/Du0yu</string>
+    <string name="about_github">https://github.com/liangfeifan</string>
     <string name="music_info">歌曲信息</string>
     <string name="no_permission_storage">没有存储空间权限，无法扫描本地歌曲！</string>
     <string name="no_permission_setting">没有权限，无法设置铃声，请授予权限</string>
